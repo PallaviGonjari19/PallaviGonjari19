@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-labelledby="ph-title ph-desc">
+  <title id="ph-title">Pallavi Gonjari</title>
+  <desc id="ph-desc">Python Full-Stack Developer and Software Engineer</desc>
+  <defs>
+    <linearGradient id="ph-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10070C"/>
+      <stop offset="0.55" stop-color="#190B12"/>
+      <stop offset="1" stop-color="#451126"/>
+    </linearGradient>
+    <radialGradient id="ph-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#701A3D" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#701A3D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ph-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#701A3D"/>
+      <stop offset="0.5" stop-color="#C77B9B"/>
+      <stop offset="1" stop-color="#E5B5C7"/>
+    </linearGradient>
+    <pattern id="ph-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#E5B5C7" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <filter id="ph-blur" x="-20%" y="-300%" width="140%" height="700%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#ph-bg)"/>
+  <rect width="1200" height="420" fill="url(#ph-grid)"/>
+
+  <!-- moving light -->
+  <ellipse cx="300" cy="110" rx="430" ry="230" fill="url(#ph-glow)">
+    <animate attributeName="cx" values="300;900;300" dur="16s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- orbital geometry -->
+  <g fill="none" stroke="#C77B9B" stroke-opacity="0.35" stroke-width="1">
+    <circle cx="990" cy="210" r="150"/>
+    <circle cx="990" cy="210" r="100" stroke-dasharray="4 8"/>
+    <circle cx="990" cy="210" r="55"/>
+  </g>
+  <g>
+    <circle cx="1140" cy="210" r="6" fill="#E5B5C7"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 990 210" to="360 990 210" dur="26s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <circle cx="990" cy="110" r="4" fill="#C77B9B"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 990 210" to="0 990 210" dur="18s" repeatCount="indefinite"/>
+  </g>
+  <circle cx="990" cy="210" r="8" fill="#701A3D" stroke="#E5B5C7" stroke-width="1.5"/>
+
+  <!-- animated path -->
+  <path d="M0 372 C 200 312, 350 432, 600 372 S 1000 312, 1200 366" fill="none" stroke="url(#ph-line)" stroke-width="2.5" stroke-linecap="round" pathLength="1" stroke-dasharray="1 0">
+    <animate attributeName="stroke-dasharray" values="0 1;1 0" dur="3.5s" begin="0s" fill="freeze"/>
+  </path>
+
+  <!-- text -->
+  <text x="80" y="130" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" letter-spacing="5" fill="#C77B9B">COMPUTER ENGINEERING GRADUATE</text>
+  <text x="80" y="210" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700" fill="#F8F0F3">Pallavi Gonjari</text>
+
+  <!-- glowing underline -->
+  <rect x="80" y="236" width="380" height="4" rx="2" fill="#C77B9B" filter="url(#ph-blur)" opacity="0.8">
+    <animate attributeName="width" from="0" to="380" dur="2s" fill="freeze"/>
+  </rect>
+  <rect x="80" y="236" width="380" height="4" rx="2" fill="url(#ph-line)">
+    <animate attributeName="width" from="0" to="380" dur="2s" fill="freeze"/>
+  </rect>
+
+  <text x="80" y="292" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#E5B5C7">Python Full-Stack Developer  ·  Software Engineer</text>
+  <text x="80" y="332" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#C77B9B">Django  ·  Flask  ·  SQL  ·  React  ·  Machine Learning</text>
+</svg>
